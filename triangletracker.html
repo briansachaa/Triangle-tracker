@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Triangle-Tracker</title>
-    <link href= "styles.css" rel="stylesheet" type="text/css">
+    <link href= "css/styles.css" rel="stylesheet" type="text/css">
+    <script src="/home/calvine/Documents/triangle-tracker/js/triangle.js"></script>
   </head>
   <body>
       <h1>Triangle-Tracker program</h1>
@@ -16,19 +17,20 @@
         <li>scalene triangle</li>
       </ul>
       <h3>Equilateral triangle</h3>
+      <img src="images/equilateral.jpg" alt="A photo of equilateral triangle" height="100" width="200">
       <p>an equilateral triangle has equal lengths on all sides. A equilateral triangle is also a regular polygon with all angles measuring 60 degrees</p>
       <h3>Isosceles triangle</h3>
       <p>an isosceles triangle has two sides of equal length</p>
       <h3>Scalene triangle</h3>
       <p>a scalene triangle has all its sides of different lengths. equivalently it has all angles of different measure.</p>
-       <script src="triangle.js"></script>
-       <p>
+
+      <p>
           hypotenuse: <input type="text" size="4" id="hypotenuse">
           adjascent: <input type="text" size="4" id="adjascent">
           opposite: <input type="text" size="4" id="opposite">
           <br>
-          <button type="button" onclick="triangletype">type</button>
-       </p>
-       <p id="output">triangle tpye = ??</p>
+          <button type="button" id="check" onclick="triangleType">type</button>
+      </p>
+       <p id="output"></p>
   </body>
 </html>
