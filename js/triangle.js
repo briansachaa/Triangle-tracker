@@ -1,20 +1,27 @@
-// ........................
-var tirangleType = function() {
-  var hypotenuse = parsefloat(document.getElementById('hypotenuse').value);
-  var adjacent = parsefloat(document.getElementById('adjascent').value);
-  var opposite = parsefloat(document.getElementById('opposite').value);
+function triangleType(){
 
-  var output = document.getElementById('output')
+var sides = []
+sides.push(document.getElementById('hypotenuse').value);
+sides.push(document.getElementById('adjascent').value);
+sides.push(document.getElementById('opposite').value);
 
-  if(hypotenuse === opposite && hypotenuse === hypotenuse && opposite === adjacent){
-  output.textContent = "Equilateral";
-  }
-  else if(hypotenuse === opposite || hypotenuse === adjacent || opposite === adjacent){
-  output.textContent = "Isosceles";
-  }
-  else if((hypotenuse + opposite) <= adjacent || (hypotenuse + adjacent) <= opposite || (opposite + adjacent) <= hypotenuse) {
-   output.textContent = "Not a definite triangle";
-  else{
-  output.textContent = "Scalene";
-  }
-};
+var hypotenuse=sides[0]
+var adjascent=sides[1]
+var opposite=sides[2]
+
+/* console.log(sides); */
+if (hypotenuse===adjascent  &&  adjascent===opposite){
+output.innerHTML=("equilateral triangle")
+}
+
+else if (hypotenuse===adjascent  &&  hypotenuse!==opposite || hypotenuse===opposite  &&  hypotenuse!==adjascent|| adjascent===opposite  &&  adjascent!==hypotenuse){
+output.innerHTML=("isosceles triangle")
+}
+
+else if(hypotenuse!==adjascent && adjascent!==opposite && hypotenuse!==opposite){
+output.innerHTML=("scalene triangle")
+}
+else if(hypotenuse>=adjascent+opposite||adjascent>=hypotenuse+opposite||opposite>=hypotenuse+adjascent){
+output.innerHTML=("NOT a triangle")
+}
+}
