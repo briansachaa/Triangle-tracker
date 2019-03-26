@@ -10,7 +10,10 @@ var adjascent=sides[1]
 var opposite=sides[2]
 
 /* console.log(sides); */
-if (hypotenuse===adjascent  &&  adjascent===opposite){
+if (isNaN(hypotenuse) || isNaN(adjascent) || isNaN(opposite)){
+  output.innerHTML=("wrong content entered")
+}
+else if (hypotenuse===adjascent  &&  adjascent===opposite){
 output.innerHTML=("equilateral triangle")
 }
 
