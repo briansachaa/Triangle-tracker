@@ -14,7 +14,7 @@ Atom
 Brian Sang
 
 ## Link to site
-https://github.com/briansachaa/Triangle-tracker.git
+https://briansachaa.github.io/Triangle-tracker/
 
 ## step-by step guide
 *input length of sides
