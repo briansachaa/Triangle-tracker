@@ -15,7 +15,7 @@ h3 {
   padding: 6px;
 }
 body {
-  background-image: url("/home/calvine/Documents/triangle-tracker/images/triangles.jpeg");
+  background-image: url("../images/triangles.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
