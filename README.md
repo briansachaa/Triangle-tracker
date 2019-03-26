@@ -10,7 +10,7 @@ Atom
 ##Author
 Brian Sang
 ##Link to site
-
+https://github.com/briansachaa/Triangle-tracker.git
 ##step-by step guide
 *input length of sides
 *allows only numerical inputs
