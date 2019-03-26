@@ -10,6 +10,10 @@ h3 {
   text-align: center;
   color: green;
 }
+.answer {
+  border: 2px solid red;
+  padding: 6px;
+}
 body {
   background-image: url("/home/calvine/Documents/triangle-tracker/images/triangles.jpeg");
   background-repeat: no-repeat;
